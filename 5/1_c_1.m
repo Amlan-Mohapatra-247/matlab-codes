@@ -1,0 +1,16 @@
+clear all;
+clc;
+f=1;
+fs=8;
+T=(fs/f);
+t=0:0.01:T;
+X=cos(2*pi*f*t).*exp(-2*(1i).*t);
+R=real(X);
+I=imag(X);
+hold on;
+plot(t,R);
+plot(t,I);
+hold off;
+legend("Real Part","Imaginary Part");
+xlabel('T');
+ylabel("R(t) or I(t)");

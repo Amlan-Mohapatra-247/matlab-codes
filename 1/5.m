@@ -1,0 +1,10 @@
+steps=0.01/1000;
+t=0:steps:40;
+x1=exp(-0.01*t);
+x2=5*exp(-0.2*t);
+subplot(2,1,1);
+plot(t,x1);
+title('(a)');
+subplot(2,1,2);
+plot(t,x2);
+title('(b)');

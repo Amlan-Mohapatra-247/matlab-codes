@@ -1,0 +1,15 @@
+clear all;
+clc;
+f=1;
+fs=3;
+T=(fs/f);
+t=0:0.01:1*T;
+R=cos(2*pi*f.*t).*cos(-2*t);
+I=cos(2*pi*f.*t).*sin(-2*t);
+hold on;
+plot(t,R);
+plot(t,I);
+hold off;
+legend("Real Part","Imaginary Part");
+xlabel("T");
+ylabel("R(t) or I(t)");

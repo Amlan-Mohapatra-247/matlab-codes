@@ -1,0 +1,13 @@
+fs=50000;
+f=1000;
+steps=1/fs;
+cycle=1/f;
+t=0:steps:5*cycle;
+x=sin(2*pi*f*t);
+y=cos(2*pi*f*t);
+subplot(2,1,1);
+plot(t,x);
+title('Sine wave');
+subplot(2,1,2);
+plot(t,y);
+title('Cosine wave');

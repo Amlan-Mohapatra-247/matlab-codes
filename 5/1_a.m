@@ -1,0 +1,16 @@
+clear all;
+clc;
+f=1;
+fs=3;
+T=(fs/f);
+t=0:0.01:2*T;
+A=sin(2*pi*f*t);
+hold on;
+R=real(A);
+plot(t,R);
+I=imag(A);
+plot(t,I);
+hold off;
+legend("REAL PART","IMAGINARY PART");
+xlabel('T');
+ylabel('R(t) or I(t)');

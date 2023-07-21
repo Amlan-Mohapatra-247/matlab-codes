@@ -1,0 +1,12 @@
+fs=8000;
+f=1000;
+steps=1/fs;
+cycle=1/f;
+t=0:steps:20000*cycle;
+x=sin(2*pi*(f/fs)*t+pi/2);
+subplot(2,1,1);
+plot(t,x);
+title('Continuous Sine wave');
+subplot(2,1,2);
+stem(t,x);
+title('Discrete Sine wave');
